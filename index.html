@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuần 9</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="container" >
+        <div class="row border">
+            <div class="col-md-3">
+                <img src="../Images/logo.PNG" alt="" >   
+            </div>
+            <div class="col-md-9 text-center">
+                <h2>ĐOÀN THANH NIÊN THÀNH PHỐ HỒ CHÍ MINH</h2>
+                <h5 class="text-danger">ĐOÀN THÀNH NIÊN TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h5>
+            </div>
+        </div>
+       
+        <div class="row pt-2 pb-2" style="background-color: rgb(195, 217, 223);">
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ĐOÀN THỂ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SỰ KIỆN</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      HOẠT ĐỘNG
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">ĐĂNG KÝ</a>
+                      <a class="dropdown-item" href="#">THAM GIA</a>
+                  </li>
+            </ul>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-6" >
+                <aside>
+                    <img src="../Images/ngayhoithanhnien.JPG" srcset="" alt="" class="rounded-circle" width="100%">
+                </aside>
+            </div>
+                
+            <div class="col-md-6">
+                <h2 class="text-warning">TIN NỔI BẬT</h2>
+                <ul class="nav flex-column" style="background-color: rgb(195, 217, 223);">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">I. Mùa hè xanh</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">II.Thanh niên tình nguyện</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">III.Tấm lòng vàng</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">IV.Hiến máu nhân đạo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">V.Bảo vệ môi trường sạch</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">VI.Thi đua lập thành tích chào mừng 26/3</a>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="">DANH SÁCH ĐĂNG KÝ HOẠT ĐỘNG MÙA HÈ XANH</h1>
+            <table class="table table-striped" role="table" id="danhsach">
+                <th>STT</th>
+                <th>Mã sinh viên</th>
+                <th>Họ tên</th>
+                <th>Giới tính</th>
+                <th>Năng khiếu</th>
+                <th>Email</th>
+                <th>Thành phố</th>
+            </tr>
+
+        </table>
+        </div>
+
+        <div class="row d-flex justify-content-end bg-info align-items-center pt-4 pb-4">
+            <p style="margin-bottom: 0px;">@2021-2022 Đoàn thanh niên - Trường đại học Công Nghiệp TP. Hồ Chí Minh</p>
+        </div>
+    </div>
+    
+    
+    <div class="modal fade" role="dialog" id="myModal" >
+        <div class="modal-dialog " style="margin-top: 10px;" role="document">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h2 class="text-left">THÔNG TIN ĐĂNG KÝ</h2>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal" style="margin-top: 10px;">
+                        <label for="masv" class="control-label-col-xs-3">Mã sinh viên:</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="masv"  class="form-control" placeholder="Nhập mã sv">
+                            <span class="text-danger" id="tnmasv" style="color: red;">*</span>
+                        </div>
+
+                        <label for="hoten" class="control-label-col-xs-3">Họ tên:</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="hoten" class="form-control" placeholder="Nhập hành trình">
+                            <span class="text-danger" id="tnhoten" style="color: red;">*</span>
+                        </div>
+                        <label for="email" class="control-label-col-xs-3">Email:</label>
+                        <div class="col-xs-9">
+                            <input type="email" id="email" class="form-control" placeholder="xxxx@iuh.edu.vn">
+                            <span class="text-danger" id="tnemail" style="color: red">*</span>
+                        </div>
+                        <label for="nangkhieu" class="control-label-col-xs-3">Năng khiếu:</label><br>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="nangkhieu" id="chkboi" value="Bơi">Bơi
+                            </label>
+                            
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="nangkhieu" id="chkbc" value="Bóng chuyền">Bóng chuyền
+                            </label>
+                            
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="nangkhieu" id="chkcl" value="Cầu lông">Cầu lông
+                            </label>
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <p for="thanhpho">Thành phố</p>
+                            <select name="thanhpho" id="tthanhpho">
+                                <option value="qn">Quảng Ngãi</option>
+                                <option value="ct">Cần Thơ</option>
+                                <option value="hcm">Hồ Chí Minh</option>
+                                <option value="hn">Hà Nội</option>
+                            </select>
+                        </div>
+
+                        <div class="form-check">
+                            <p>Giới tính</p>
+                            <input type="radio" id="rdNam" name="gioitinh" value="Nam">
+                            <label for="Nam">Nam</label><br>
+                            <input type="radio" id="rdNu" name="gioitinh" value="Nữ">
+                            <label for="Nu">Nữ</label><br>
+                            <input type="radio" id="rdKhac" name="gioitinh" value="Khac">
+                            <label for="Khac">Khác</label>
+
+                        </div>
+
+                        
+                        <button class="btn btn-sucess btn-group-justified" id="save" type="button" style="color: aliceblue; background-color: green; width: 100%;">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
